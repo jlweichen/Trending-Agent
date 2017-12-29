@@ -41,4 +41,5 @@ while(i < 16){
   # says the trends are cached for every 5 minutes
   Sys.sleep(300)
 }
+remove(APIkey, APIsecret, i, tokenKey, tokenSecret)
 write_csv(bigTrending, paste(trendPath, "/bigtrending", format(Sys.time(), format="%Y%m%d%H%M"), ".csv", sep=""))
